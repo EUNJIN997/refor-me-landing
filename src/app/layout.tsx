@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
+import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 
 const notoSansKr = localFont({
@@ -27,5 +28,5 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
-  return <html lang="ko" className={`${notoSansKr.variable} h-full antialiased`}><body className="min-h-full flex flex-col">{children}</body></html>;
+  return <html lang="ko" className={`${notoSansKr.variable} h-full antialiased`}><body className="min-h-full flex flex-col">{children}<Analytics /></body></html>;
 }
