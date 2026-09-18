@@ -25,7 +25,7 @@ function Hero() {
         <h1 id="hero-title" className="max-w-[14ch] text-[clamp(2.75rem,4.2vw,3.6rem)] leading-[1.2] font-bold tracking-[-0.055em] text-foreground">마음을 꺼내는 순간,<br /><span className="text-primary">나를 다시 만나요.</span></h1>
         <p className="mt-7 max-w-xl text-pretty text-lg leading-8 text-[#657084] sm:text-xl sm:leading-9">말만 들어주는 대화가 아니에요. 충분히 이야기하면 내가 놓치고 있던 마음과 현실적으로 어려웠던 점을 함께 정리해요.</p>
         <div className="mt-9 flex flex-col gap-3 sm:flex-row"><a className="rf-button rf-button-primary" href="#preview">서비스 미리보기 <span aria-hidden="true">↗</span></a><a className="rf-button rf-button-secondary" href="#how-it-works">어떻게 시작하나요?</a></div>
-        <p className="mt-5 text-sm text-[#8898aa]">Re:ForMe는 현재 서비스 시안을 바탕으로 준비 중입니다.</p>
+        <p className="mt-5 text-sm text-[#59687a]">Re:ForMe는 현재 서비스 시안을 바탕으로 준비 중입니다.</p>
       </div>
       <div className="relative mx-auto w-full max-w-[410px] scroll-mt-24 lg:mr-0" id="preview">
         <div className="absolute inset-x-8 top-10 bottom-8 rounded-full bg-[#cbd3ff] blur-[72px]" />
@@ -47,7 +47,7 @@ function Problem() {
 function HowItWorks() {
   return <section id="how-it-works" className="scroll-mt-20 bg-[#f8f9fe] px-6 py-24 sm:py-32 lg:px-10"><div className="mx-auto max-w-7xl">
     <SectionTitle eyebrow="How it works" title="대화에서 시작해, 나를 위한 도구로" description="Re:ForMe는 마음을 이야기하고 돌아보는 흐름을 통해 자신을 돌볼 작은 출발점을 제안합니다." />
-    <div className="mt-16 grid gap-6 lg:grid-cols-3">{steps.map(([number, title, text]) => <Card key={number} className="rounded-[28px] border-white bg-white py-8 shadow-[0_16px_40px_-25px_rgba(50,50,93,0.18)]"><CardContent className="px-8"><span className="text-4xl font-bold tracking-tight text-[#c5ccf7]">{number}</span><h3 className="mt-9 text-xl font-bold text-foreground">{title}</h3><p className="mt-4 text-base leading-8 text-muted-foreground">{text}</p></CardContent></Card>)}</div>
+    <div className="mt-16 grid gap-6 lg:grid-cols-3">{steps.map(([number, title, text]) => <Card key={number} className="rounded-[28px] border-white bg-white py-8 shadow-[0_16px_40px_-25px_rgba(50,50,93,0.18)]"><CardContent className="px-8"><span className="text-4xl font-bold tracking-tight text-[#4d61d2]">{number}</span><h3 className="mt-9 text-xl font-bold text-foreground">{title}</h3><p className="mt-4 text-base leading-8 text-muted-foreground">{text}</p></CardContent></Card>)}</div>
   </div></section>;
 }
 
@@ -63,5 +63,5 @@ function FinalCta() {
 }
 
 export default function Home() {
-  return <><SiteHeader /><main><Hero /><Problem /><HowItWorks /><Benefits /><FinalCta /></main><footer className="border-t border-[#edf0f7] px-6 py-8 lg:px-10"><div className="mx-auto flex max-w-7xl flex-col items-start justify-between gap-3 text-sm text-[#8898aa] sm:flex-row sm:items-center"><p className="font-bold text-foreground">Re:ForMe</p><p>나를 위한 감각의 전환</p><p>© {new Date().getFullYear()} Re:ForMe</p></div></footer></>;
+  return <><SiteHeader /><main><Hero /><Problem /><HowItWorks /><Benefits /><FinalCta /></main><footer className="border-t border-[#edf0f7] px-6 py-8 lg:px-10"><div className="mx-auto flex max-w-7xl flex-col items-start justify-between gap-3 text-sm text-[#59687a] sm:flex-row sm:items-center"><p className="font-bold text-foreground">Re:ForMe</p><p>나를 위한 감각의 전환</p><p>© {new Date().getFullYear()} Re:ForMe</p></div></footer></>;
 }

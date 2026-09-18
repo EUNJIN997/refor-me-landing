@@ -55,7 +55,7 @@
   --card-foreground: #32325d;
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.145 0 0);
-  --primary: #5e72e4;
+  --primary: #4d61d2;
   --primary-foreground: #ffffff;
   --secondary: oklch(0.97 0 0);
   --secondary-foreground: oklch(0.205 0 0);
@@ -134,8 +134,8 @@ body { min-width: 320px; }
 .rf-button { display: inline-flex; min-height: 3.5rem; align-items: center; justify-content: center; gap: .75rem; border-radius: 1rem; padding: .75rem 1.5rem; font-size: 1rem; font-weight: 700; transition: background-color .2s, transform .2s, box-shadow .2s; }
 .rf-button:hover { transform: translateY(-2px); }
 .rf-button:focus-visible { outline: 3px solid #9aa8f1; outline-offset: 3px; }
-.rf-button-primary { background: #5e72e4; color: white; box-shadow: 0 12px 28px -12px rgba(94,114,228,.55); }
-.rf-button-primary:hover { background: #4d61d2; }
+.rf-button-primary { background: #4d61d2; color: white; box-shadow: 0 12px 28px -12px rgba(77,97,210,.55); }
+.rf-button-primary:hover { background: #4358c2; }
 .rf-button-secondary { border: 1px solid #d9def5; background: white; color: #32325d; }
 .rf-button-secondary:hover { background: #f3f5ff; }
 .rf-check { display: inline-flex; height: 1.5rem; width: 1.5rem; flex: none; align-items: center; justify-content: center; border-radius: 999px; background: #e9edff; color: #5e72e4; font-size: .875rem; font-weight: 700; }
