@@ -38,4 +38,6 @@ npm run dev
 
 ## 배포
 
-Vercel 배포 주소: 배포 완료 후 기입 예정
+[https://refor-me-landing.vercel.app](https://refor-me-landing.vercel.app)
+
+멘토 리뷰 전에는 `feature/mission-5-landing` 브랜치를 Vercel Production에 연결해 PR의 구현 화면을 배포합니다. PR이 `main`으로 머지되면 Vercel의 Production Branch를 `main`으로 변경할 수 있습니다.
