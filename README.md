@@ -1,36 +1,41 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Re:ForMe 랜딩 페이지
 
-## Getting Started
+Re:ForMe는 복잡한 마음을 편하게 이야기하고, 대화 속 감정과 현실의 어려움을 함께 돌아본 뒤 개인에게 맞는 감각 도구를 제안하는 서비스 콘셉트입니다. 이 저장소는 코드잇 스프린트 미션 5를 위한 소개 페이지입니다. 실제 대화 기능과 데이터 연동은 아직 포함하지 않습니다.
 
-First, run the development server:
+## 페이지 기획
+
+- 주요 사용자: 마음은 복잡하지만 무엇부터 말해야 할지 모르거나, 이야기한 뒤에도 다음 행동이 막막한 사람
+- 문제 → 해결 → 기대효과: 감정을 정리하기 어려움 → 자유로운 대화와 돌아보기, 감각 도구의 흐름 → 자신의 마음을 알아차리고 일상에서 돌봄을 시작할 계기
+- 핵심 행동: **서비스 미리보기**를 눌러 Figma 시안에서 가져온 첫 홈 화면을 확인하기
+- 섹션 순서: 히어로 → 문제 공감 → 이용 흐름 및 기능 → 기대효과 → 최종 CTA
+
+## 기술 스택
+
+- Next.js 16 App Router, React 19, TypeScript
+- Tailwind CSS 4, shadcn/ui (Button, Card)
+- Noto Sans KR 로컬 폰트
+
+## 실행 방법
+
+Node.js 20.9 이상이 필요합니다.
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+브라우저에서 `http://localhost:3000`을 엽니다. 배포 전 확인에는 `npm run lint`와 `npm run build`를 사용합니다.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 구현한 인터랙션
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- 모바일 메뉴 열기·닫기 및 메뉴 선택 시 자동 닫기
+- 메뉴와 CTA를 통한 섹션 스크롤 이동
+- 키보드 포커스 표시와 움직임 줄이기 설정 대응
 
-## Learn More
+## 디자인 출처
 
-To learn more about Next.js, take a look at the following resources:
+[미션 4 Figma 파일](https://www.figma.com/design/QmteRU5R1QhuKLhJJlqHcu/?node-id=0-1)의 스플래시, 온보딩, 첫 홈 화면을 참고했습니다. 해당 파일은 모바일 앱 시안이므로 색상, 타이포그래피, 로고와 화면 미리보기를 가져와 랜딩 페이지용 구성으로 확장했습니다. `public/figma`의 로고와 홈 화면 이미지는 Figma에서 내보낸 원본 자산입니다.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 배포
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Vercel 배포 주소: 배포 완료 후 기입 예정

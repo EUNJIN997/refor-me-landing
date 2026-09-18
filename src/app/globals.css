@@ -7,8 +7,8 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-sans: var(--font-noto-sans-kr);
+  --font-mono: ui-monospace, monospace;
   --font-heading: var(--font-sans);
   --color-sidebar-ring: var(--sidebar-ring);
   --color-sidebar-border: var(--sidebar-border);
@@ -50,29 +50,29 @@
 
 :root {
   --background: oklch(1 0 0);
-  --foreground: oklch(0.145 0 0);
+  --foreground: #32325d;
   --card: oklch(1 0 0);
-  --card-foreground: oklch(0.145 0 0);
+  --card-foreground: #32325d;
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.145 0 0);
-  --primary: oklch(0.205 0 0);
-  --primary-foreground: oklch(0.985 0 0);
+  --primary: #5e72e4;
+  --primary-foreground: #ffffff;
   --secondary: oklch(0.97 0 0);
   --secondary-foreground: oklch(0.205 0 0);
   --muted: oklch(0.97 0 0);
-  --muted-foreground: oklch(0.556 0 0);
+  --muted-foreground: #657084;
   --accent: oklch(0.97 0 0);
   --accent-foreground: oklch(0.205 0 0);
   --destructive: oklch(0.577 0.245 27.325);
   --border: oklch(0.922 0 0);
   --input: oklch(0.922 0 0);
-  --ring: oklch(0.708 0 0);
+  --ring: #5e72e4;
   --chart-1: oklch(0.87 0 0);
   --chart-2: oklch(0.556 0 0);
   --chart-3: oklch(0.439 0 0);
   --chart-4: oklch(0.371 0 0);
   --chart-5: oklch(0.269 0 0);
-  --radius: 0.625rem;
+  --radius: 1rem;
   --sidebar: oklch(0.985 0 0);
   --sidebar-foreground: oklch(0.145 0 0);
   --sidebar-primary: oklch(0.205 0 0);
@@ -128,3 +128,15 @@
     @apply font-sans;
   }
 }
+
+html { scroll-behavior: smooth; }
+body { min-width: 320px; }
+.rf-button { display: inline-flex; min-height: 3.5rem; align-items: center; justify-content: center; gap: .75rem; border-radius: 1rem; padding: .75rem 1.5rem; font-size: 1rem; font-weight: 700; transition: background-color .2s, transform .2s, box-shadow .2s; }
+.rf-button:hover { transform: translateY(-2px); }
+.rf-button:focus-visible { outline: 3px solid #9aa8f1; outline-offset: 3px; }
+.rf-button-primary { background: #5e72e4; color: white; box-shadow: 0 12px 28px -12px rgba(94,114,228,.55); }
+.rf-button-primary:hover { background: #4d61d2; }
+.rf-button-secondary { border: 1px solid #d9def5; background: white; color: #32325d; }
+.rf-button-secondary:hover { background: #f3f5ff; }
+.rf-check { display: inline-flex; height: 1.5rem; width: 1.5rem; flex: none; align-items: center; justify-content: center; border-radius: 999px; background: #e9edff; color: #5e72e4; font-size: .875rem; font-weight: 700; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } .rf-button { transition: none; } .rf-button:hover { transform: none; } }
